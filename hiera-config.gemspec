@@ -5,7 +5,7 @@ require 'hiera/config/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "hiera-config"
-  spec.version       = Hiear::Config::VERSION
+  spec.version       = Hiera::Config::VERSION
   spec.authors       = ["Carl Pulley"]
   spec.email         = ["carlp@cakesolutions.net"]
   spec.summary       = %q{Vagrant plugin allowing the hiera gem to be accessed within a Vagrantfile.}
