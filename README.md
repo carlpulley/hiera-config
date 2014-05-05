@@ -1,6 +1,6 @@
 # Hiera::Config
 
-Vagrant plugin allowing the hiera gem to be accessed within a Vagrantfile.
+Simple Vagrant plugin allowing the hiera gem to be accessed within a Vagrantfile.
 
 ## Installation
 
@@ -18,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-See https://github.com/puppetlabs/hiera for instructions on how to call hiera from with Ruby code (e.g. a Vagrantfile!).
+See https://github.com/puppetlabs/hiera for general instructions on how to call hiera from with Ruby code (e.g. a Vagrantfile!).
+
+Using the configuration examples of https://github.com/puppetlabs/hiera, we can define a simple `Vagrantfile` as follows:
+```
+raise "Perform 'vagrant plugin install hiera-config'" unless ::Vagrant.has_plugin?("hiera-config")
+
+require "hiera"
+
+scope = { "location" => "dc1" }
+hiera = Hiera.new(:config => "/etc/hiera.yaml")
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.hostname = hiera.lookup("ntpserver", "HOSTNAME", scope)
+  
+  # other vagrant stuff here...
+end
+```
 
 ## Contributing
 
