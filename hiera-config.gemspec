@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = HieraConfig::Config::VERSION
   spec.authors       = ["Carl Pulley"]
   spec.email         = ["carlp@cakesolutions.net"]
-  spec.summary       = %q{Vagrant plugin allowing the hiera gem to be accessed within a Vagrantfile.}
-  spec.description   = %q{Vagrant plugin allowing the hiera gem to be accessed within a Vagrantfile.}
+  spec.summary       = %q{Simple Vagrant plugin allowing the hiera gem to be accessed from within a Vagrantfile.}
+  spec.description   = %q{Simple Vagrant plugin allowing the hiera gem to be accessed from within a Vagrantfile.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
