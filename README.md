@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-See https://github.com/puppetlabs/hiera for general instructions on how to call hiera from with Ruby code (e.g. a Vagrantfile!).
+See https://github.com/puppetlabs/hiera for general instructions on how to call hiera from within Ruby code (e.g. a Vagrantfile!).
 
 Using the configuration examples of https://github.com/puppetlabs/hiera, we can define a simple `Vagrantfile` as follows:
 ```
