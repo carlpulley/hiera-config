@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["carlp@cakesolutions.net"]
   spec.summary       = %q{Simple Vagrant plugin allowing the hiera gem to be accessed from within a Vagrantfile.}
   spec.description   = %q{Simple Vagrant plugin allowing the hiera gem to be accessed from within a Vagrantfile.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/carlpulley/hiera-config"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "hiera"
+  spec.add_dependency "hiera"
 end
